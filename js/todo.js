@@ -16,8 +16,8 @@ function deleteToDO(event){
     // console.dir(event.target);
     // console.dir(event.target.parentElement.innerText);
     const li = event.target.parentElement;
-    console.log(li.id);
-    console.log(typeof li.id);
+    // console.log(li.id);
+    // console.log(typeof li.id);
     toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id) );
     li.remove();
     saveToDos();
@@ -63,7 +63,7 @@ toDoForm.addEventListener("submit" , handleTodoSubmit );
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
-console.log(savedToDos);
+// console.log(savedToDos);
 
 if(savedToDos !== null){
     
@@ -76,4 +76,4 @@ if(savedToDos !== null){
 
 }
 
-function saveFilter(item){return item !== 3;}
+// function saveFilter(item){return item !== 3;}
